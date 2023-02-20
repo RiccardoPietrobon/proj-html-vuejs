@@ -13,6 +13,7 @@
 /* font */
 body {
     font-family: 'Roboto', sans-serif;
+    color: var(--three-color);
 }
 
 /* header */
@@ -25,22 +26,96 @@ header li {
     cursor: pointer;
 }
 
-header img {
+header nav img {
     height: 20px;
     margin-right: 200px;
 }
 
-header input,
-header button {
+header nav input,
+header nav button {
     border: none;
     background-color: #f5f5f5;
     padding: 5px;
 }
 
-header button {
+header nav button {
     color: var(--two-color);
 }
 
 header nav {
     box-shadow: 0px 5px 5px 5px #f5f5f5;
+}
+
+/* jumbotron */
+
+#jumbotron button {
+    border: none;
+    background-color: var(--two-color);
+    color: var(--one-color);
+    border-radius: 5px;
+    font-size: 12px;
+    padding: 8px 35px;
+    font-weight: bold;
+}
+
+#jumbotron button:hover {
+    background-color: var(--three-color);
+}
+
+#jumbotron p:last-child {
+    font-size: 12px;
+}
+
+#jumbotron a {
+    color: var(--two-color);
+    font-weight: bold;
+}
+
+/* jumbo img */
+
+#jumbo-first {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    border: 5px solid hsl(24deg 63% 80%);
+    position: absolute;
+    z-index: 4;
+    top: 250px;
+    left: 190px;
+}
+
+#jumbo-second-a {
+    position: absolute;
+    z-index: 2;
+    top: 100px;
+    left: 100px;
+}
+
+#jumbo-second-b {
+    position: absolute;
+    z-index: 2;
+    top: 250px;
+    left: 100px;
+}
+
+#jumbo-third {
+    height: 450px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 3;
+    right: 100px;
+}
+
+#jumbo-fourth {
+    position: absolute;
+    z-index: 3;
+    top: 80px;
+    right: 0px;
+}
+
+#jumbo-fifth {
+    position: absolute;
+    z-index: 2;
+    bottom: -60px;
+    right: 150px;
 }
