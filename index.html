@@ -27,7 +27,7 @@
     <link rel="stylesheet" href="./CSS/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
 
 
     <!-- AXIOS -->
@@ -93,15 +93,15 @@
             <!-- jumbotron -->
             <section id="jumbotron" class="py-2">
                 <div class="container">
-
+                    <!-- macrosezioni right left -->
                     <div class="row">
                         <!-- left section -->
-                        <div class="col-5 d-flex flex-column justify-content-center my-5">
+                        <div class="col-5 d-flex flex-column justify-content-center">
                             <h1 class="fw-bold">Distant learning for further expansion</h1>
                             <p>Learning is a life-long journey that in a fact we never find the terminate stop. Stop
                                 searching, enjoy the process.</p>
                             <div>
-                                <button type="button" class="my-4">
+                                <button type="button" class="my-4 green-button">
                                     <i class="fa-solid fa-download"></i>
                                     Download free guide
                                 </button>
@@ -113,6 +113,7 @@
 
                         </div>
                         <div class="col-7 position-relative">
+                            <!-- img position absolute -->
                             <div id="jumbo-first"></div>
                             <img src="./img/maxcoach-shape-08.png" alt="maxcoach-shape-08" id="jumbo-second-a">
                             <img src="./img/maxcoach-shape-08.png" alt="maxcoach-shape-08" id="jumbo-second-b">
@@ -123,11 +124,59 @@
                             <img id="jumbo-fifth" src="./img/maxcoach-shape-07.png" alt="maxcoach-shape-07">
                         </div>
                     </div>
+                    <!-- footer jumbo -->
+                    <div class="footer-jumbo d-flex justify-content-between align-items-center">
+                        <img src="./img/client-logo-01.png" alt="client-logo-01">
+                        <img src="./img/client-logo-02.png" alt="client-logo-02">
+                        <img src="./img/client-logo-03.png" alt="client-logo-03">
+                        <img src="./img/client-logo-04.png" alt="client-logo-04">
+                        <img src="./img/client-logo-05.png" alt="client-logo-05">
+                        <img src="./img/client-logo-06.png" alt="client-logo-06">
+                    </div>
                 </div>
 
             </section>
 
         </header>
+
+        <main>
+            <!-- online-courses -->
+            <section id="online-courses">
+                <div class="container">
+                    <h5>STIMULATED TO LEARN?</h5>
+                    <h2>Featured Online Courses</h2>
+                    <!-- mycards -->
+                    <div class="row my-5">
+                        <div class="col-6 d-flex box-card p-3" v-for="course in listCourses">
+                            <div class="box-img">
+                                <img :src=" './img/'+course.image" alt="course-02-480x298">
+                            </div>
+                            <div class="box-text p-4">
+                                <p class="course-price">
+                                    {{course.price}}
+                                </p>
+                                <p class="course-description">
+                                    {{course.title}}
+                                </p>
+                                <p class="course-numbers">
+                                    <span class="me-4">
+                                        <i class="fa-regular fa-file"></i>
+                                        {{course.numbers[0]}} Lessons
+                                    </span>
+                                    <span>
+                                        <i class="fa-regular fa-user"></i>
+                                        {{course.numbers[1]}} Students
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </section>
+        </main>
 
 
     </div>

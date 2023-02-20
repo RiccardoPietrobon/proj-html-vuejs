@@ -10,9 +10,23 @@
     --eight-color: #8C89A2;
 }
 
+/* titles */
+h5 {
+    font-size: 15px;
+    text-align: center;
+    color: var(--eight-color);
+}
+
+h2 {
+    font-size: 25px;
+    text-align: center;
+    color: var(--three-color);
+    font-weight: bold;
+}
+
 /* font */
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
     color: var(--three-color);
 }
 
@@ -48,7 +62,7 @@ header nav {
 
 /* jumbotron */
 
-#jumbotron button {
+.green-button {
     border: none;
     background-color: var(--two-color);
     color: var(--one-color);
@@ -58,7 +72,7 @@ header nav {
     font-weight: bold;
 }
 
-#jumbotron button:hover {
+.green-button:hover {
     background-color: var(--three-color);
 }
 
@@ -69,6 +83,14 @@ header nav {
 #jumbotron a {
     color: var(--two-color);
     font-weight: bold;
+}
+
+#jumbotron .row {
+    margin: 60px 0px;
+}
+
+#jumbotron .col-5 {
+    margin-top: 100px;
 }
 
 /* jumbo img */
@@ -88,14 +110,16 @@ header nav {
     position: absolute;
     z-index: 2;
     top: 100px;
-    left: 100px;
+    left: 150px;
+    width: 120px;
 }
 
 #jumbo-second-b {
     position: absolute;
     z-index: 2;
-    top: 250px;
-    left: 100px;
+    top: 220px;
+    left: 150px;
+    width: 120px;
 }
 
 #jumbo-third {
@@ -118,4 +142,44 @@ header nav {
     z-index: 2;
     bottom: -60px;
     right: 150px;
+}
+
+/* footer jumbo */
+.footer-jumbo {
+    margin-top: 150px;
+}
+
+/* online courses */
+#online-courses {
+    padding: 100px 0px;
+    background-color: var(--four-color);
+}
+
+.course-price {
+    color: var(--two-color);
+    font-weight: bolder;
+    font-size: 17px;
+}
+
+.course-description {
+    font-weight: bolder;
+    font-size: 17px;
+}
+
+.course-description:hover {
+    color: var(--two-color);
+    cursor: pointer;
+}
+
+.course-numbers {
+    color: var(--eight-color);
+    font-weight: bolder;
+    font-size: 12px;
+}
+
+.box-img img {
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
 }
