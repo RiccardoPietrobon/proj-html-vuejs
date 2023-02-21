@@ -32,6 +32,10 @@ a {
     background-color: var(--one-color);
 }
 
+li {
+    list-style: none;
+}
+
 /* titles */
 h5 {
     font-size: 15px;
@@ -48,6 +52,12 @@ h2 {
 h3 {
     font-size: 20px;
     text-align: center;
+    color: var(--three-color);
+    font-weight: bold;
+}
+
+h4 {
+    font-size: 17px;
     color: var(--three-color);
     font-weight: bold;
 }
@@ -436,4 +446,22 @@ header nav {
     background-color: #f5f5f5;
     padding: 12px;
     width: 450px;
+}
+
+footer .col:first-child {
+    margin-right: 300px;
+}
+
+footer li:hover {
+    cursor: pointer;
+    color: var(--two-color);
+}
+
+footer li {
+    color: var(--eight-color);
+}
+
+.social li {
+    font-size: 30px;
+    padding: 0px 15px;
 }

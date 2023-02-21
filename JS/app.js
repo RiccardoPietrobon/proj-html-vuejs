@@ -122,11 +122,35 @@ const app = Vue.createApp({
             listFooter: [
                 {
                     what: "Adress",
-                    where: "382 NE 191st St # 87394 Miami, FL 33179-3899",
-                    when: "+1(305) 547-9909 (9am - 5pm EST, Monday - Friday)",
-                    mail: "support@maxcoach.com",
+                    listElements: [
+                        "382 NE 191st St # 87394 Miami, FL 33179-3899",
+                        "+1(305) 547-9909 (9am - 5pm EST, Monday - Friday)",
+                        "support@maxcoach.com",
+                    ],
+                },
+                {
+                    what: "Explore",
+                    listElements: [
+                        "Start here",
+                        "Success story",
+                        "Blog",
+                        "Courses",
+                        "About us",
+                        "Contact us",
+                    ],
+                },
+                {
+                    what: "Information",
+                    listElements: [
+                        "Membership",
+                        "Purchase guide",
+                        "Privacy policy",
+                        "Terms of services",
+                    ],
                 },
             ],
+
+            currentItem: 0,
         }
     },
 
