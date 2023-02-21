@@ -10,15 +10,34 @@
     --eight-color: #8C89A2;
 }
 
+.green-text {
+    color: var(--two-color);
+}
+
+.blue-text {
+    color: var(--three-color);
+}
+
+a {
+    text-decoration: none;
+    font-size: 12px;
+}
+
 /* titles */
 h5 {
     font-size: 15px;
-    text-align: center;
     color: var(--eight-color);
+    font-weight: bold;
 }
 
 h2 {
     font-size: 25px;
+    color: var(--three-color);
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 18px;
     text-align: center;
     color: var(--three-color);
     font-weight: bold;
@@ -182,4 +201,24 @@ header nav {
     height: 150px;
     width: 150px;
     object-fit: cover;
+}
+
+/* smart tutoring */
+#smart-tutoring {
+    padding: 100px 0px;
+    background-color: var(--first-color);
+}
+
+#smart-tutoring a:hover {
+    color: var(--two-color);
+}
+
+/* enjoy campanionship */
+#enjoy-campanionship {
+    padding: 100px 0px;
+    background-color: var(--first-color);
+}
+
+#enjoy-campanionship a:hover {
+    color: var(--three-color);
 }
