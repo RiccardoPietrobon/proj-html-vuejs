@@ -2,6 +2,7 @@ const app = Vue.createApp({
 
     data() {
         return {
+            /* array listCourses */
             listCourses: [
                 {
                     price: "$40.00",
@@ -40,7 +41,7 @@ const app = Vue.createApp({
                     numbers: [14, 76],
                 },
             ],
-
+            /* array listBenefits */
             listBenefits: [
                 {
                     image: "home-2-image-box-01.png",
@@ -61,7 +62,7 @@ const app = Vue.createApp({
                     link: "Start now",
                 },
             ],
-
+            /* array listCarousel */
             listCarousel: [
                 {
                     title: "It's a choiche of a quality for people with special needs",
@@ -86,7 +87,7 @@ const app = Vue.createApp({
                 },
 
             ],
-
+            /* array listNumbers */
             listNumbers: [
                 {
                     title: "Sucessfully trained",
@@ -109,13 +110,22 @@ const app = Vue.createApp({
                     description: "BLOG POSTS",
                 },
             ],
-
+            /* array listBlog */
             listBlog: [
                 "Become a Better Blogger: Content Planning",
                 "Promoting Your Online Business on Pinterest",
                 "Gramifications and Game-Based Learning",
                 "Designing an Online Course from Expert's Perspective",
                 "Why Online Courses Are the Future of Education",
+            ],
+            /* array footer */
+            listFooter: [
+                {
+                    what: "Adress",
+                    where: "382 NE 191st St # 87394 Miami, FL 33179-3899",
+                    when: "+1(305) 547-9909 (9am - 5pm EST, Monday - Friday)",
+                    mail: "support@maxcoach.com",
+                },
             ],
         }
     },

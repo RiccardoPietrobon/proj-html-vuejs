@@ -402,3 +402,38 @@ header nav {
 .card-blog {
     box-shadow: 20px 50px 50px -30px var(--eight-color);
 }
+
+/* subscribe newsletter */
+
+#subscribe_newsletter {
+    padding: 100px 0px;
+}
+
+#subscribe_newsletter_first_pic {
+    position: absolute;
+    bottom: 100px;
+    right: 370px;
+}
+
+#subscribe_newsletter_second_pic {
+    position: absolute;
+    bottom: 50px;
+    right: 350px;
+}
+
+#subscribe_newsletter_third_pic {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    border: 8px solid hsl(170deg 46% 70%);
+    position: absolute;
+    top: 40px;
+    left: 400px;
+}
+
+#subscribe_newsletter input {
+    border: none;
+    background-color: #f5f5f5;
+    padding: 12px;
+    width: 450px;
+}
