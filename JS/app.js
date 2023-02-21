@@ -61,10 +61,58 @@ const app = Vue.createApp({
                     link: "Start now",
                 },
             ],
+
+            listCarousel: [
+                {
+                    title: "It's a choiche of a quality for people with special needs",
+                    text: "I'm a very strict person so I require everything to be organized and neat. Then, I'll be able to make things right and shine. MaxCoach guys just got me.",
+                    img: "testimonial-avata-03.jpg",
+                    name: "FLORENCE THEMES",
+                    job: "/Multimedia Admin",
+                },
+                {
+                    title: "High level of efficiency and scientific teaching methods",
+                    text: "I am free to learn at my own pace, follow my own schedule and choose the subject I want to learn from the syllabus. Great study portal for people like me.",
+                    img: "testimonial-avata-02.jpg",
+                    name: "MINA HOLLACE",
+                    job: "/Freelancer",
+                },
+                {
+                    title: "Professional team of specialist and passionate mentors at reach",
+                    text: "I need to get a certification for English proficiency and MaxCoach is my best choiche. Their tutors are smart and professional when dealing with students.",
+                    img: "testimonial-avata-04.jpg",
+                    name: "MADLEY PONDOR",
+                    job: "/IT Specialist",
+                },
+
+            ],
+            listNumbers: [
+                {
+                    title: "Sucessfully trained",
+                    number: "1790",
+                    description: "ENROLLED LEARNERS",
+                },
+                {
+                    title: "Proudly Received",
+                    number: "19",
+                    description: "COUNTRYWIDE AWARDS",
+                },
+                {
+                    title: "Firmly Established",
+                    number: "24",
+                    description: "LOCAL BRANCHES",
+                },
+                {
+                    title: "Getting Featured on",
+                    number: "1090",
+                    description: "BLOG POSTS",
+                },
+            ],
         }
     },
 
     methods: {
+
 
     },
 

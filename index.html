@@ -108,7 +108,7 @@
 
                             </div>
                             <p>Have questions?
-                                <a href="">Get Free Sample &#8594</a>
+                                <a href="#" class="green-text fw-bold">Get Free Sample &#8594</a>
                             </p>
 
                         </div>
@@ -152,10 +152,10 @@
                                 <img :src=" './img/'+course.image" alt="course-description">
                             </div>
                             <div class="box-text p-4">
-                                <p class="course-price">
+                                <p class="course-price fw-bold">
                                     {{course.price}}
                                 </p>
-                                <p class="course-description">
+                                <p class="course-description fw-bold">
                                     {{course.title}}
                                 </p>
                                 <p class="course-numbers">
@@ -183,7 +183,7 @@
             <section id="smart-tutoring" class="background_white">
                 <div class="container d-flex flex-column align-items-center">
                     <h5>MAXCOACH AVAILABLE COURSES</h5>
-                    <h2>Access <span class="green-text">Smart Tutoring</span> Program For Benefits</h2>
+                    <h2>Access <span class="green-text fw-normal">Smart Tutoring</span> Program For Benefits</h2>
                     <!-- mycards -->
                     <div class="row py-5">
                         <div class="col-4 d-flex flex-column align-items-start" v-for="benefit in listBenefits">
@@ -240,10 +240,57 @@
 
             <!-- top-learners -->
             <section id="top-learners">
-                <div class="container d-flex">
+                <div class="d-flex align-items-center flex-column m-3 justify-content-center">
                     <h5>GREAT WORDS ABOUT MAXCOACH</h5>
-                    <h2>Our <span class="green-text">top learners'</span> verbatim</h2>
+                    <h2>Our <span class="green-text fw-normal">top learners'</span> verbatim</h2>
+                    <div class="row justify-content-evenly">
+                        <div class="col-3 px-5 py-3 background_white m-3 few_opacity" v-for="element in listCarousel">
+                            <p class="fw-bold">{{element.title}}</p>
+                            <p>{{element.text}}</p>
+                            <div class="d-flex box-leaners">
+                                <img :src="'./img/'+element.img" alt="user">
+                                <div class="description px-3">
+                                    <p class="fw-bold">{{element.name}}</p>
+                                    <p class="course-numbers">{{element.job}}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="controls d-flex p-3">
+                        <div class="blu-circle"></div>
+                        <div class="blu-circle"></div>
+                        <div class="blu-circle"></div>
+                    </div>
 
+                </div>
+            </section>
+
+            <!-- online certificate -->
+            <section id="online-certificate" class="position-relative">
+                <img id="online-certificate_first_pic" src="./img/maxcoach-shape-01.png" alt="max1">
+                <img id="online-certificate_second_pic" src="./img/maxcoach-shape-02.png" alt="max2">
+                <div id="online-certificate_third_pic"></div>
+
+                <div class="container d-flex flex-column align-items-center ">
+                    <h3>Start today for getting <span class="green-text fw-normal">Online Certification</span></h3>
+                    <h2 class="mb-5">You can be your own guiding star with our help!</h2>
+                    <button class="green-button">Get started now</button>
+
+                </div>
+
+            </section>
+
+            <!-- numbers -->
+            <section id="big-numbers" class="background_white">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-3 py-5 d-flex flex-column justify-content-between align-items-center box-number"
+                            v-for="element in listNumbers">
+                            <h3 class="small_width">{{element.title}}</h3>
+                            <span class="number_bigger">{{element.number}}</span>
+                            <h5>{{element.description}}</h5>
+                        </div>
+                    </div>
                 </div>
             </section>
 
