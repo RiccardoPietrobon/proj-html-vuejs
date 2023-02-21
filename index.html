@@ -294,6 +294,64 @@
                 </div>
             </section>
 
+            <!-- best-blogs -->
+            <section id="best-blogs" class="py-5">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <!-- list blog -->
+                        <div class="col-4">
+                            <h5>ENJOYABLE INSIGHTS</h5>
+                            <h2>Most Viewed <span class="fw-normal green-text">Best Blogs</span></h2>
+                            <ul v-for="blogelement in listBlog">
+                                <li>{{blogelement}}</li>
+                            </ul>
+                        </div>
+                        <!-- two cards -->
+                        <div class="col-4">
+                            <div class="card-blog background_white" style="height: 450px;">
+                                <div class="card-blog-img">
+                                    <img style="width: 100%;" src="./img/artist-blog-03-480x352.jpeg" alt="artist">
+                                </div>
+                                <div class="card-blog-text p-3">
+                                    <h5>ARTIST</h5>
+                                    <p class="course-description fw-bold">Brush Strokes Energize Trees in Paintings</p>
+                                    <p class="course-numbers">
+                                        <span class="me-4">
+                                            <i class="fa-regular fa-calendar"></i>
+                                            May 15, 2020
+                                        </span>
+                                        <span>
+                                            <i class="fa-solid fa-eye"></i>
+                                            688 views
+                                        </span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card-blog background_white" style="height: 450px;">
+                                <div class="card-blog-img">
+                                    <img style="width: 100%;" src="./img/artist-blog-01-480x352.jpg" alt="artist">
+                                </div>
+                                <div class="card-blog-text p-3">
+                                    <h5>ARTIST</h5>
+                                    <p class="course-description fw-bold">Brush Strokes Energize Trees in Paintings</p>
+                                    <p class="course-numbers">
+                                        <span class="me-4">
+                                            <i class="fa-regular fa-calendar"></i>
+                                            May 15, 2020
+                                        </span>
+                                        <span>
+                                            <i class="fa-solid fa-eye"></i>
+                                            688 views
+                                        </span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
         </main>
 

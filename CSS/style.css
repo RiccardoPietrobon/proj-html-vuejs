@@ -116,6 +116,11 @@ header nav {
     margin-top: 100px;
 }
 
+#jumbotron a:hover {
+    color: var(--three-color);
+    cursor: pointer;
+}
+
 /* jumbo img */
 
 #jumbo-first {
@@ -370,4 +375,30 @@ header nav {
 
 .small_width {
     width: 125px;
+}
+
+/* best blogs */
+
+#best-blogs li {
+    list-style-type: none;
+    position: relative;
+    padding-left: 10px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#best-blogs li:hover {
+    color: var(--two-color);
+    cursor: pointer;
+}
+
+#best-blogs li::before {
+    content: "\2192";
+    position: absolute;
+    top: 0px;
+    left: -15px;
+}
+
+.card-blog {
+    box-shadow: 20px 50px 50px -30px var(--eight-color);
 }
