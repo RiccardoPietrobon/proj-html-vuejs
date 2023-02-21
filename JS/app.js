@@ -2,6 +2,107 @@ const app = Vue.createApp({
 
     data() {
         return {
+
+            /* array navbar */
+            listNav: [
+                {
+                    title: "Home",
+                    listTitles: [
+                        "Start Here",
+                        "Succes Story",
+                        "About me",
+                        "About us 01",
+                        "About us 02",
+                        "About us 03",
+                        "Contact me",
+                        "Contact us",
+                        "Purchase guide",
+                        "Privacy Policy",
+                        "Terms of Service"
+                    ],
+                },
+                {
+                    title: "Pages",
+                    listTitles: [
+                        "Start Here",
+                        "Succes Story",
+                        "About me",
+                        "About us 01",
+                        "About us 02",
+                        "About us 03",
+                        "Contact me",
+                        "Contact us",
+                        "Purchase guide",
+                        "Privacy Policy",
+                        "Terms of Service"
+                    ],
+                },
+                {
+                    title: "Courses",
+                    listTitles: [
+                        "Start Here",
+                        "Succes Story",
+                        "About me",
+                        "About us 01",
+                        "About us 02",
+                        "About us 03",
+                        "Contact me",
+                        "Contact us",
+                        "Purchase guide",
+                        "Privacy Policy",
+                        "Terms of Service"
+                    ],
+                },
+                {
+                    title: "Features",
+                    listTitles: [
+                        "Start Here",
+                        "Succes Story",
+                        "About me",
+                        "About us 01",
+                        "About us 02",
+                        "About us 03",
+                        "Contact me",
+                        "Contact us",
+                        "Purchase guide",
+                        "Privacy Policy",
+                        "Terms of Service"
+                    ],
+                },
+                {
+                    title: "Blog",
+                    listTitles: [
+                        "Start Here",
+                        "Succes Story",
+                        "About me",
+                        "About us 01",
+                        "About us 02",
+                        "About us 03",
+                        "Contact me",
+                        "Contact us",
+                        "Purchase guide",
+                        "Privacy Policy",
+                        "Terms of Service"
+                    ],
+                },
+                {
+                    title: "Shop",
+                    listTitles: [
+                        "Start Here",
+                        "Succes Story",
+                        "About me",
+                        "About us 01",
+                        "About us 02",
+                        "About us 03",
+                        "Contact me",
+                        "Contact us",
+                        "Purchase guide",
+                        "Privacy Policy",
+                        "Terms of Service"
+                    ],
+                },
+
+            ],
             /* array listCourses */
             listCourses: [
                 {
@@ -150,11 +251,23 @@ const app = Vue.createApp({
                 },
             ],
 
-            currentItem: 0,
+            activeMenu: {
+                index: 0,
+                open: true,
+            }
         }
     },
 
     methods: {
+
+        itemMenu(clickedItemIndex) {
+            if (clickedItemIndex == this.activeMenu.index) {
+                this.activeMenu.open = !this.activeMenu.open;
+            } else {
+                this.activeMenu.index = clickedItemIndex;
+                this.activeMenu.open = true;
+            }
+        },
 
 
     },

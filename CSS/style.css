@@ -78,6 +78,11 @@ header li {
     cursor: pointer;
 }
 
+.item_nav:hover {
+    color: var(--two-color);
+    text-decoration: underline;
+}
+
 header nav img {
     height: 20px;
     margin-right: 200px;
@@ -464,4 +469,20 @@ footer li {
 .social li {
     font-size: 30px;
     padding: 0px 15px;
+}
+
+.initial {
+    border-radius: 50%;
+    height: 55px;
+    width: 55px;
+    border: none;
+    color: var(--one-color);
+    background-color: var(--two-color);
+    position: absolute;
+    bottom: 20%;
+    right: -10%;
+}
+
+.initial:hover {
+    background-color: var(--three-color);
 }

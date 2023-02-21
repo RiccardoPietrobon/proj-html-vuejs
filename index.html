@@ -59,25 +59,22 @@
                         <li>
                             <img src="./img/dark-logo.png" alt="dark-logo">
                         </li>
-                        <li>
-                            Home <i class="fa-solid fa-angle-down"></i>
+                        <li v-for="(element, index) in listNav" class="position-relative" @click="itemMenu(index)"
+                            :tabindex="index" @blur="activeMenu.open = false">
+                            <span class="item_nav">
+                                {{element.title}}
+                                <i class="fa-solid fa-angle-down"></i>
+                            </span>
+
+                            <ul class="position-absolute" style="z-index: 7; width: 25px; right: 100%;"
+                                v-if="activeMenu.open && activeMenu.index == index">
+                                <li v-for="specificElement in element.listTitles"
+                                    class="item_nav fw-normal background_white p-1" style="width: 100px;">
+                                    {{specificElement}}</li>
+                            </ul>
                         </li>
-                        <li>
-                            Pages <i class="fa-solid fa-angle-down"></i>
-                        </li>
-                        <li>
-                            Courses <i class="fa-solid fa-angle-down"></i>
-                        </li>
-                        <li>
-                            Features <i class="fa-solid fa-angle-down"></i>
-                        </li>
-                        <li>
-                            Blog <i class="fa-solid fa-angle-down"></i>
-                        </li>
-                        <li>
-                            Shop <i class="fa-solid fa-angle-down"></i>
-                        </li>
-                        <li>
+
+                        <li class="item_nav">
                             <i class="fa-regular fa-circle-user"></i>
                         </li>
                         <li>
@@ -376,7 +373,7 @@
         </main>
 
         <footer>
-            <div class="container py-5 text-center">
+            <div class="container py-5 text-center position-relative">
                 <div class="row">
                     <div class="col" v-for="item in listFooter">
                         <ul>
@@ -396,6 +393,7 @@
                     <i class="fa-regular fa-copyright"></i>
                     2020 MaxCoach, All Rights Reserved
                 </span>
+                <button type="button" class="initial">&#8593</button>
             </div>
         </footer>
 
