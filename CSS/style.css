@@ -142,26 +142,26 @@ header nav {
     border-radius: 50%;
     width: 50px;
     height: 50px;
-    border: 5px solid hsl(24deg 63% 80%);
+    border: 7px solid hsl(24deg 63% 80%);
     position: absolute;
     z-index: 4;
-    top: 250px;
-    left: 190px;
+    top: 75%;
+    left: 16%;
 }
 
 #jumbo-second-a {
     position: absolute;
     z-index: 2;
-    top: 100px;
-    left: 150px;
+    top: 30%;
+    left: 15%;
     width: 120px;
 }
 
 #jumbo-second-b {
     position: absolute;
     z-index: 2;
-    top: 220px;
-    left: 150px;
+    top: 60%;
+    left: 15%;
     width: 120px;
 }
 
@@ -170,21 +170,21 @@ header nav {
     border-radius: 50%;
     position: absolute;
     z-index: 3;
-    right: 100px;
+    right: 20%;
 }
 
 #jumbo-fourth {
     position: absolute;
     z-index: 3;
-    top: 80px;
+    top: 50%;
     right: 0px;
 }
 
 #jumbo-fifth {
     position: absolute;
     z-index: 2;
-    bottom: -60px;
-    right: 150px;
+    bottom: -15%;
+    right: 25%;
 }
 
 /* footer jumbo */
@@ -305,7 +305,7 @@ header nav {
 
 /* top-learners */
 #top-learners {
-    padding: 200px 0px;
+    padding: 100px 0px;
 }
 
 .few_opacity {
@@ -313,7 +313,7 @@ header nav {
 }
 
 #top-learners .col-3:hover {
-    padding: 200px 0px;
+    padding: 50px 0px;
     opacity: 1;
     cursor: pointer;
 }
@@ -355,14 +355,14 @@ header nav {
 
 #online-certificate_first_pic {
     position: absolute;
-    top: 50px;
-    left: 350px;
+    top: 42%;
+    left: 16%;
 }
 
 #online-certificate_second_pic {
     position: absolute;
-    bottom: 50px;
-    right: 350px;
+    bottom: 25%;
+    right: 10%;
 }
 
 #online-certificate_third_pic {
@@ -371,8 +371,8 @@ header nav {
     height: 60px;
     border: 8px solid hsl(30deg 29% 86%);
     position: absolute;
-    top: -20px;
-    left: 300px;
+    top: 10%;
+    left: 12%;
 }
 
 /* NUMBERS */
@@ -426,14 +426,14 @@ header nav {
 
 #subscribe_newsletter_first_pic {
     position: absolute;
-    bottom: 100px;
-    right: 370px;
+    bottom: 40%;
+    right: 10%;
 }
 
 #subscribe_newsletter_second_pic {
     position: absolute;
-    bottom: 50px;
-    right: 350px;
+    bottom: 33%;
+    right: 8%;
 }
 
 #subscribe_newsletter_third_pic {
@@ -442,8 +442,8 @@ header nav {
     height: 60px;
     border: 8px solid hsl(170deg 46% 70%);
     position: absolute;
-    top: 40px;
-    left: 400px;
+    top: 20%;
+    left: 10%;
 }
 
 #subscribe_newsletter input {
@@ -453,8 +453,9 @@ header nav {
     width: 450px;
 }
 
+/* footer */
 footer .col:first-child {
-    margin-right: 300px;
+    padding-right: 350px;
 }
 
 footer li:hover {
@@ -473,16 +474,17 @@ footer li {
 
 .initial {
     border-radius: 50%;
-    height: 55px;
-    width: 55px;
+    padding: 15px 20px;
     border: none;
     color: var(--one-color);
     background-color: var(--two-color);
     position: absolute;
     bottom: 20%;
-    right: -10%;
+    right: -5%;
 }
+
 
 .initial:hover {
     background-color: var(--three-color);
+    color: var(--one-color);
 }

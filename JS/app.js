@@ -233,13 +233,19 @@ const app = Vue.createApp({
                     what: "Explore",
                     listElements: [
                         "Start here",
-                        "Success story",
                         "Blog",
-                        "Courses",
                         "About us",
+                    ],
+                },
+                {
+                    what: "",
+                    listElements: [
+                        "Success story",
+                        "Courses",
                         "Contact us",
                     ],
                 },
+
                 {
                     what: "Information",
                     listElements: [

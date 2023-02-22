@@ -371,15 +371,16 @@
 
 
         </main>
-
+        <!-- footer -->
         <footer>
-            <div class="container py-5 text-center position-relative">
+            <div class="container py-5 position-relative">
                 <div class="row">
                     <div class="col" v-for="item in listFooter">
                         <ul>
                             <h4>{{item.what}}</h4>
 
-                            <li v-for="menuitem in item.listElements" class="py-2">{{menuitem}}</li>
+                            <li v-for="menuitem in item.listElements" class="py-2" style="font-size: 13px;">{{menuitem}}
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -389,11 +390,15 @@
                     <li><i class="fa-brands fa-instagram"></i></li>
                     <li><i class="fa-brands fa-linkedin"></i></li>
                 </ul>
-                <span style="color: var(--eight-color); font-size: 10px;">
-                    <i class="fa-regular fa-copyright"></i>
-                    2020 MaxCoach, All Rights Reserved
-                </span>
-                <button type="button" class="initial">&#8593</button>
+                <div class="d-flex justify-content-center">
+                    <span style="color: var(--eight-color); font-size: 10px; opacity: 0.7;">
+                        <i class="fa-regular fa-copyright"></i>
+                        2020 MaxCoach, All Rights Reserved
+                    </span>
+
+                </div>
+                <a href="" class="initial">&#8593</a>
+
             </div>
         </footer>
 
