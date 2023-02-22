@@ -257,7 +257,7 @@ header nav {
     color: var(--three-color);
 }
 
-/* jumbo-first img absolute */
+/* campanionship img absolute */
 #enjoy-campanionship_first_pic {
     border-radius: 50%;
     width: 80px;
@@ -265,14 +265,14 @@ header nav {
     border: 12px solid hsl(24deg 63% 80%);
     position: absolute;
     z-index: 4;
-    top: -150px;
-    left: 700px;
+    top: -70%;
+    left: 95%;
 }
 
 #enjoy-campanionship_second_pic {
     position: absolute;
     z-index: 3;
-    top: -100px;
+    top: -40%;
     box-shadow: 0px 60px 35px -40px var(--eight-color);
 }
 
@@ -283,22 +283,22 @@ header nav {
 #enjoy-campanionship_third_pic {
     position: absolute;
     z-index: 4;
-    top: 100px;
-    left: 300px;
+    top: 50%;
+    left: 40%;
 }
 
 #enjoy-campanionship_fourth_pic {
     position: absolute;
     z-index: 2;
-    top: -25px;
-    right: 670px;
+    top: -15%;
+    right: 90%;
 }
 
 #enjoy-campanionship_fifth_pic {
     position: absolute;
     z-index: 2;
-    top: 250px;
-    left: 550px;
+    top: 120%;
+    left: 70%;
 }
 
 #enjoy-campanionship_sixth_pic {
@@ -309,8 +309,8 @@ header nav {
     height: 180px;
     position: absolute;
     z-index: 2;
-    top: -180px;
-    left: -70px;
+    top: -80%;
+    left: -10%;
 }
 
 /* top-learners */

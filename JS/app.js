@@ -186,6 +186,13 @@ const app = Vue.createApp({
                     name: "MADLEY PONDOR",
                     job: "/IT Specialist",
                 },
+                // {
+                //     title: "High level of efficiency and scientific teaching methods",
+                //     text: "I need to get a certification for Informatic proficiency and MaxCoach is my best choiche. Their tutors are smart and professional when dealing with students.",
+                //     img: "testimonial-avata-01.jpg",
+                //     name: "HOMER SIMPSON",
+                //     job: "/Technician",
+                // },
 
             ],
             /* array listNumbers */
@@ -261,8 +268,7 @@ const app = Vue.createApp({
                 open: false,
             },
             /* carosel */
-            activeButton: 0,
-            activeBox: 1,
+            activeElement: 1
         }
     },
 
@@ -278,11 +284,11 @@ const app = Vue.createApp({
         },
         /* carosel */
         switchButton(index) {
-            this.activeButton = index;
+            this.activeElement = index;
         },
 
         switchBox(index) {
-            this.activeBox = index;
+            this.activeElement = index;
         },
 
 
