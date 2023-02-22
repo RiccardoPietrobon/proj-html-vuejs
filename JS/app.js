@@ -238,7 +238,6 @@ const app = Vue.createApp({
                     ],
                 },
                 {
-                    what: "",
                     listElements: [
                         "Success story",
                         "Courses",
@@ -256,16 +255,19 @@ const app = Vue.createApp({
                     ],
                 },
             ],
-
+            /* navbar */
             activeMenu: {
                 index: 0,
-                open: true,
-            }
+                open: false,
+            },
+            /* carosel */
+            activeButton: 0,
+            activeBox: 1,
         }
     },
 
     methods: {
-
+        /* navbar */
         itemMenu(clickedItemIndex) {
             if (clickedItemIndex == this.activeMenu.index) {
                 this.activeMenu.open = !this.activeMenu.open;
@@ -273,6 +275,14 @@ const app = Vue.createApp({
                 this.activeMenu.index = clickedItemIndex;
                 this.activeMenu.open = true;
             }
+        },
+        /* carosel */
+        switchButton(index) {
+            this.activeButton = index;
+        },
+
+        switchBox(index) {
+            this.activeBox = index;
         },
 
 

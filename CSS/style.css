@@ -83,6 +83,16 @@ header li {
     text-decoration: underline;
 }
 
+.item_small {
+    width: 120px;
+    padding: 20px;
+}
+
+.item_small:last-child {
+    padding-bottom: 5px;
+    border-bottom: 3px solid var(--two-color);
+}
+
 header nav img {
     height: 20px;
     margin-right: 200px;
@@ -309,13 +319,17 @@ header nav {
 }
 
 .few_opacity {
-    opacity: 0.7;
+    opacity: 0.5;
 }
 
 #top-learners .col-3:hover {
     padding: 50px 0px;
     opacity: 1;
     cursor: pointer;
+}
+
+.active-box {
+    opacity: 1;
 }
 
 
@@ -335,17 +349,14 @@ header nav {
 }
 
 .blu-circle:hover {
-    width: 10px;
-    height: 10px;
     background-color: var(--three-color);
-    border: 5px solid var(--three-color);
     cursor: pointer;
+    transform: scale(2);
 }
 
-.active-circle {
-    width: 15px;
-    height: 15px;
+.blu-circle-active {
     background-color: var(--three-color);
+    transform: scale(2);
 }
 
 /* online certificate */
@@ -474,13 +485,14 @@ footer li {
 
 .initial {
     border-radius: 50%;
-    padding: 15px 20px;
+    padding: 15px 25px;
     border: none;
     color: var(--one-color);
     background-color: var(--two-color);
     position: absolute;
     bottom: 20%;
     right: -5%;
+    font-size: 20px;
 }
 
 
